@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mario Kart Valentine!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="title">🍄 Mario Kart Valentine! ❤️</h1>
+    <p>Tap a kart to collect a coin!</p>
+
+    <div class="karts">
+        <div class="kart" onclick="collectCoin()">
+            <img src="kart1.png" class="kart-img">
+        </div>
+        <div class="kart" onclick="collectCoin()">
+            <img src="kart2.png" class="kart-img">
+        </div>
+        <div class="kart" onclick="collectCoin()">
+            <img src="kart3.png" class="kart-img">
+        </div>
+    </div>
+
+    <div id="coinCount">Coins: 0 / 5</div>
+
+    <div id="message" class="hidden">
+        <h2>Dillian… Will you be my Valentine? ❤️🏁</h2>
+
+        <div class="buttons">
+            <button class="yes-btn" onclick="sayYes()">YES!</button>
+            <button class="no-btn" onclick="shakeNo()">No</button>
+        </div>
+
+        <div id="loveMessage" class="hidden love-text">I love you ❤️</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
